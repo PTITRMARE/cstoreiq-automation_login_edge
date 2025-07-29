@@ -4,6 +4,7 @@ import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
 import utils.DriverFactory;
+import io.cucumber.testng.CucumberOptions;
 
 public class LoginSteps {
 
@@ -28,7 +29,8 @@ public class LoginSteps {
 
     @Then("I should be logged in successfully")
     public void verify_login() {
-        DriverFactory.takeScreenshot("LoginSuccess");
+
+        DriverFactory.takeScreenshot("Loggin");
         System.out.println("Login successful - Screenshot captured");
     }
 

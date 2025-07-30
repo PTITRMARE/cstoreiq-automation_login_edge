@@ -30,7 +30,7 @@ public class LoginSteps {
     @Then("I should be logged in successfully")
     public void verify_login() {
 
-        DriverFactory.takeScreenshot("Loggin");
+        DriverFactory.takeScreenshot("Loggin page");
         System.out.println("Login successful - Screenshot captured");
     }
 
